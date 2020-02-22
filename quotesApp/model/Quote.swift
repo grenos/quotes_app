@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+// hashable is like identifiable but more generic
+struct Quote : Hashable, Decodable {
+//    var id = UUID() ---> identifiable
+    var quote : String
+    var name : String
+}
